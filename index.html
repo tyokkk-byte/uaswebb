@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Utama</title>
+  <!-- Menyertakan Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> <!-- Tautkan file CSS -->
+  <style>
+    .profile-img { width: 150px; height: 150px; border-radius: 50%; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">SETYA MULYO UTOMO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Profil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Galeri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Konten Utama -->
+  <div class="container mt-5 text-center">
+    <img src="1.jpg.jpeg" alt="Foto Profil" class="profile-img">
+    <h1>Selamat datang di website saya</h1>
+    <p>Ini adalah halaman utama, di sini Anda bisa menemukan berbagai informasi tentang saya.</p>
+    <li>Nama saya Setya Mulyo Utomo, asal Purwodadi, dan saat ini saya adalah mahasiswa di Universitas PGRI Semarang. Di kampus, saya aktif mengikuti perkuliahan dan juga terlibat dalam berbagai kegiatan Unit Kegiatan Mahasiswa (UKM), yang memberi saya kesempatan untuk mengembangkan keterampilan di luar akademik dan memperluas jaringan.
+      
+      Universitas PGRI Semarang memiliki fasilitas yang sangat mendukung, dan lingkungan akademiknya sangat kondusif untuk belajar. Saya merasa bangga bisa menjadi bagian dari kampus ini.
+      
+      Secara pribadi, saya adalah seorang ambivert, yang kadang suka bersosialisasi dan berbicara dengan orang lain, namun di saat lain, saya lebih menikmati waktu sendiri. Saya percaya sifat ini membantu saya beradaptasi dengan berbagai situasi dan menjaga keseimbangan dalam kehidupan pribadi dan sosial.
+      
+      
+      Deskripsi ini lebih singkat namun tetap mencakup informasi penting tentang latar belakang Anda, aktivitas di kampus, serta kepribadian Anda.</li>
+    <p id="greeting"></p>
+  </div>
+
+  <!-- Menambahkan interaksi dengan JavaScript -->
+  <script>
+    const greeting = document.getElementById('greeting');
+    const hour = new Date().getHours();
+    if (hour < 12){
+      greeting.textContent = "Selamat Pagi!";
+    } else if (hour < 18) {
+      greeting.textContent = "Selamat Siang!";
+    } else {
+      greeting.textContent = "Selamat Malam!";
+    }
+  </script>
+
+  <!-- Menyertakan Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+/* Reset margin dan padding untuk semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Mengatur latar belakang seluruh halaman */
+body {
+    font-family: 'Lora', serif; /* Menggunakan font elegan Lora dari Google Fonts */
+    background-color: #0e457b; /* Latar belakang abu-abu cerah */
+    color: #4e4e4e; /* Teks warna abu-abu lembut untuk kontras yang nyaman */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #34495e; /* Warna abu-abu gelap yang elegan */
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    color: #093a47 !important; /* Warna putih pada brand */
+}
+
+.navbar .nav-link {
+    color: #093a47 !important; /* Warna putih pada link */
+}
+
+.navbar .nav-link:hover {
+    color: #f39c12 !important; /* Warna kuning keemasan untuk hover */
+}
+
+/* Halaman Utama */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px; /* Menambah padding untuk ruang lebih lega */
+    background-color: #ffffff; /* Latar belakang putih pada container */
+    border-radius: 12px; /* Sudut melengkung untuk memberikan efek halus */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut pada container */
+}
+
+/* Gaya gambar profil */
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    border: 5px solid #34495e; /* Border dengan warna abu-abu gelap */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Menambahkan bayangan halus pada gambar */
+}
+
+/* Judul dan Heading */
+h1, h2, h3 {
+    font-family: 'Merriweather', serif; /* Menggunakan font serif yang elegan */
+    color: #2c3e50; /* Warna abu gelap yang elegan */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.15rem;
+    text-align: center;
+    color: #7f8c8d; /* Warna abu lembut untuk teks */
+    line-height: 1.6;
+}
+
+/* Styling untuk tombol kirim di halaman kontak */
+.btn-primary {
+    background-color: #3498db; /* Biru muda yang elegan */
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 30px; /* Tombol dengan sudut melengkung */
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9; /* Biru yang lebih gelap saat hover */
+    cursor: pointer;
+    transform: translateY(-2px); /* Efek sedikit terangkat saat hover */
+}
+
+/* Menambahkan padding pada form */
+form {
+    max-width: 550px;
+    margin: 20px auto;
+}
+
+/* Card untuk Galeri */
+.card {
+    margin: 20px 0;
+    border: none;
+    border-radius: 12px; /* Sudut melengkung pada card */
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Bayangan card yang lebih elegan */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Efek bayangan lebih besar saat hover */
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #ecf0f1; /* Latar belakang abu muda pada body card */
+}
+
+.card-title {
+    font-size: 1.4rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 25px;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 12px 12px 0 0; /* Sudut melengkung pada bagian atas footer */
+}
+
+footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #f39c12; /* Warna hover kuning keemasan untuk link di footer */
+}
+
+/* Responsivitas di perangkat mobile */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .container {
+        padding: 30px 15px; /* Menyesuaikan padding pada container */
+    }
+
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+
+    .card-img-top {
+        height: 180px; /* Menyesuaikan ukuran gambar di card pada perangkat kecil */
+    }
+}
